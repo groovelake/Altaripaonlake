@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista Ingresso — Altaripa The Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #080808; --white: #ffffff;
+      --gold: #c9a84c; --gold-dim: #8a6f2e;
+      --border: rgba(201,168,76,0.2);
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+    body {
+      background: var(--black); color: var(--white);
+      font-family: var(--font-body); font-weight: 300;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; padding: 40px 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      max-width: 480px; width: 100%;
+      border: 1px solid var(--border); border-radius: 4px;
+      padding: 48px 36px; text-align: center;
+    }
+    h1 {
+      font-family: var(--font-display); font-size: 36px;
+      font-weight: 300; letter-spacing: 0.08em; margin-bottom: 12px;
+    }
+    p { font-size: 12px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); margin-bottom: 36px; }
+    /* Placeholder: sostituisci con il tuo form o link Google Forms / Typeform */
+    .note {
+      font-size: 11px; letter-spacing: 0.2em; color: var(--gold-dim);
+      text-transform: uppercase; border: 1px dashed var(--gold-dim);
+      border-radius: 2px; padding: 20px; margin-bottom: 28px;
+    }
+    a.back {
+      font-size: 10px; letter-spacing: 0.25em; color: var(--gold);
+      text-decoration: none; text-transform: uppercase;
+    }
+    a.back:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Lista Ingresso</h1>
+    <p>Compila il form per iscriverti in lista</p>
+    <div class="note">
+      ← Inserisci qui il tuo Google Form<br/>o link Typeform per la lista →
+    </div>
+    <a class="back" href="index.html">← Torna alle serate</a>
+  </div>
+</body>
+</html>
